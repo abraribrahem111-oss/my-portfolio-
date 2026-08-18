@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.fade-in {
+  animation: fadeIn 1.2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+    background-color:#0F172A;
+}
+
+.logo {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.navbar {
+    width: 90%;
+    display: flex;
+    height: 5.5rem;
+    position: fixed;
+    margin: 20px 75px;
+    border-radius: 30px;
+    align-items: center;
+    padding: 0px 6.25rem;
+    background-color:#f472b596;
+    justify-content: space-between;
+    border-bottom: 2px solid #f472b563;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 3.125rem;
+}
+
+.navbar ul li a:hover {
+    color: rgb(242, 205, 231);
+}
+
+.navbar ul li:hover {
+    transform: scale(1.1);
+}
+
+#hero {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    z-index: 1000;
+    padding-top: 10px;
+    padding-left: 150px;
+    height: 100vh;
+    padding-top: 9rem;
+    position: relative;
+}
+
+.main {
+    margin-top: 5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #F8FAFC;
+    font-weight: 500;
+}
+
+h2 span {
+    color: #F472B6;
+    font-weight: 700;
+    display: inline-block;
+    margin: .2rem 0;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1.5625rem;
+    margin-top: .625rem;
+    letter-spacing: 1px;
+    width: 63%;
+}
+
+.main .btn {
+    display: inline-block;
+    background-color: #F472B6;
+    color: #fff;
+    font-size: .8rem;
+    padding: .4rem 1.5625rem;
+    border-radius: 1.5625rem;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.main .btn:hover {
+    background-color: rgb(243, 127, 210);
+    transform: scale(1.1);
+    margin-right: 10px;
+}
+
+.social a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.7rem;
+    padding-right: 1.2rem;
+}
+
+.social a:hover {
+    color:#F472B6;
+    transform: scale(1.1); 
+}
+
+.img {
+    position: absolute;
+    top: 7rem;
+    right: 3.125rem;
+}
+
+/* About Me */
+#about-me {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#about-me pre{
+    display: flex;
+    font-size: 2.5rem;
+    color: #fff;
+    justify-content: center;
+    font-weight: 500;
+}
+
+#about-me pre span {
+    color: #F472B6;
+}
+
+.email {
+    font-weight: 200;
+    color: #fff;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+.abrar {
+    color: #F8FAFC;
+    width: 60%;
+    line-height: 1.9rem;
+    margin-top: 6.25rem;
+    margin-left: 30rem;
+}
+
+.info {
+   color: #fff;
+   margin-top: 1rem;
+   margin-left: 30rem;
+   line-height: 2rem;
+}
+
+.info span {
+    color: #F472B6;
+}
+
+.img2 img {
+    height: 370px;
+    width: 280px;
+    position: absolute;
+    top: 180px;
+    left: 100px;
+}
+
+/*services*/
+#services {
+    display: flex;
+    margin-top: 6.25rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+#services .head p {
+    color: #fff;
+    text-align: center;
+}
+
+.cards , .projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    margin: 3.125rem 6.25rem
+}
+
+.card , .project{
+    box-shadow: 0px 0px 5px #f472b5b3;
+    background-color: #00000070;
+    height: auto;
+    padding: 1.25rem;
+}
+
+.card:hover {
+    background-color:#ffffff5a;
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.card h4 , .project h4{
+    color: #F472B6;
+    text-shadow: 0 0 5px #F472B6;
+    font-size: larger;
+}
+
+.card p , .project p{
+   color: #fff;
+   line-height: 2rem;
+   margin-top: 1.5rem;
+}
+/* My skills*/
+#skills .head h2 {
+    color: #F472B6;
+    font-size: 2.5rem;
+    text-align: center;
+}
+#skills .head p{
+    color: #ffffff;
+    text-align: center;
+}
+
+.grades {
+    margin: auto;
+    width: 70%;
+    margin-top: 3.125rem;
+}
+
+.grade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.grade h4{
+    color: #F472B6;
+    font-size: 2rem;
+    margin-left: 5rem;
+}
+
+.grade #white {
+    width: 60%;
+    background-color: #fff;
+    height: 1.8rem;
+    border-radius: 5rem;
+}
+
+.grade #white #grade-html , #grade-css, #grade-js, #grade-react{
+    width: 92%;
+    background-color:#F472B6;
+    height: 1.8rem;
+    border-radius: 5rem;
+}
+.grade #white #grade-css {
+    width: 85%;
+}
+.grade #white #grade-js {
+    width: 80%;
+}
+.grade #white #grade-react{
+    width: 90%;
+}
+
+.grades p {
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+/* projects */
+.projects {
+    margin: 100px;
+}
+#projects {
+    display: flex;
+    margin-top: 6.25rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project img {
+    width: 350px;
+    height: 150px;
+}
+
+.project p {
+    margin-bottom: 3.125rem;
+}
+
+.project .github {
+    text-decoration: none;
+    color: white;
+    background-color: #F472B6;
+    border-radius: 2rem;
+    padding: .5rem 1.875rem;
+    text-shadow: 0 0 10px #ffffff;
+    box-shadow: 0 0 10px #F472B6;
+}
+
+/* contact me*/
+#Contact {
+    text-align: center;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 6.25rem 15rem;
+}
+
+.form input {
+    padding: 1rem;
+    border: 0;
+    background-color: #0F172A;
+    color: #fff;
+}
+
+.form #message{
+    height: 9.375rem;
+}
+
+.form #btn {
+    background-color: #F472B6;
+    color: #fff;
+    width: 40%;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+ .form input:hover {
+    border: 2px solid #F472B6;
+    border-radius: 5px;
+    box-shadow: 0 0 0.8rem #F472B6;
+ }
+
+
+@media (max-width: 480px) {
+    #hero{
+        height: auto;
+        padding: 100px 40px;
+    }
+    .navbar{
+        height: auto;
+        padding: 0px 4.5rem;
+        width: 80%;
+        margin: 2rem;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .navbar ul li{
+        margin-bottom: 1.25rem;
+    }
+    .main{
+        order: 2;
+        width: 100%;
+        margin-top: 500px;
+    }
+    .main h2 span {
+        font-size: 3rem;
+    }
+    .main h3 {
+        width: 100%;
+    }
+    .img {
+        order: 1;
+        right: 30px;
+    }
+    #about-me {
+        height: auto;
+    }
+    .abrar {
+        margin-top: 33rem;
+        margin-left: 3.125rem;
+        width: 85%;
+        order: 2;
+    }
+    .info {
+        margin: 3.125rem;
+        order: 3;
+    }
+    .head h2 {
+        margin-left: 1rem;
+        text-align: center;
+    }
+    .cards {
+        width: 80%;
+        grid-template-columns: 1fr;
+    }
+    .grades {
+        width: 90%;
+        margin: 5rem 1.6rem;
+    }
+    .grade h4 {
+        margin-left: 1.25rem;
+        font-size: 1.3rem;
+    }
+    .grade{
+        margin-bottom: 2rem;
+    }
+    .grades p {
+        font-size: .8rem;
+        margin: 0rem 1.6rem;
+        margin-top: 3.125rem;
+    }
+    .projects {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .project {
+        width: 90%;
+        margin: auto;
+    }
+    .form {
+        width: 70%;
+        margin: 3rem 3.2rem;
+    }
+
+}
